@@ -203,7 +203,7 @@ Always prefer:
 
 ### RULE 10: BANNED PHRASES — EXPANDED LIST
 
-NEVER use these (AI detection red flags and corporate language):
+NEVER use these (AI detection red flags, corporate language, AND Google spam triggers):
 
 **Corporate/formal:**
 - `Je vous recommande vivement` → `je recommande` or `a recommander`
@@ -236,6 +236,48 @@ NEVER use these (AI detection red flags and corporate language):
 - `dans l'ensemble` → use `globalement` or `au final`
 - Starting with `Il est` → avoid, sounds written
 - Any sentence starting with `Concernant` → NEVER
+
+**GOOGLE SPAM FILTER BANNED PHRASES (reviews get deleted for these):**
+These generic emotional/praise phrases are flagged by Google's spam algorithm because they appear in thousands of fake reviews. Using them = instant removal risk + appeal rejection.
+
+- `ça fait plaisir` / `ca fait plaisir` → NEVER (top spam trigger)
+- `on sent qu'ils aiment leur boulot` → NEVER (coordinated review signature)
+- `travail de pro` / `boulot de pro` → NEVER
+- `je recommande à 100%` / `je recommande a 100%` → NEVER
+- `les yeux fermés` / `les yeux fermes` → NEVER
+- `une équipe au top` / `une equipe au top` → NEVER
+- `vraiment au top` → NEVER (overused in fake reviews)
+- `rien à redire` / `rien a redire` → NEVER (spam signature)
+- `un travail impeccable` → NEVER
+- `je suis pleinement satisfait` → NEVER
+- `chapeau` → NEVER (flagged as generic praise)
+- `bravo à toute l'équipe` → NEVER
+- `du travail de qualité` → NEVER
+
+**[REQUIRED] ENDING STRATEGY — SPECIFIC OUTCOMES ONLY:**
+Instead of generic emotional praise at the end, the final sentence MUST focus on ONE of these 4 outcome types:
+
+1. **Physical outcome** — what changed visually/physically after the service:
+   - `depuis les grosses pluies de mars plus rien du tout`
+   - `le zinc est nickel et les tuiles bien alignées`
+   - `la terrasse est sèche depuis l'intervention`
+   - `les branches ne touchent plus les fils`
+
+2. **Financial relief** — devis/price was respected:
+   - `le devis a été respecté au centime près`
+   - `pas un euro de plus que ce qui était annoncé`
+   - `facture conforme au devis, rien de caché`
+
+3. **Peace of mind** — the worry/problem is gone:
+   - `on va enfin passer l'hiver au sec`
+   - `je dors tranquille maintenant`
+   - `plus besoin de mettre des seaux quand il pleut`
+   - `ça nous a enlevé un poids`
+
+4. **Time/durability proof** — the result held up over time:
+   - `ça fait 3 mois et toujours aucun souci`
+   - `on a eu deux grosses tempêtes depuis et rien a bougé`
+   - `depuis l'intervention en janvier tout tient parfaitement`
 
 ### RULE 11: VARIED OPENINGS
 
@@ -278,16 +320,26 @@ This is the MOST IMPORTANT specificity layer. Without it, Google flags the revie
 
 **Per batch rule:** Rotate specificity layers. Don't use the same combination twice. Every review must feel like a DIFFERENT real experience.
 
-### RULE 13: VARIED ENDINGS (NEW)
+### RULE 13: VARIED ENDINGS — SPECIFIC OUTCOMES ONLY (UPDATED)
 
-NEVER end two reviews the same way. Rotate:
-- **Recommendation ending:** `je recommande`, `a recommander`
-- **Result ending:** `plus aucun probleme depuis`, `resultat nickel`
-- **Intention ending:** `on refera appel cest sur`, `jy retournerai`
-- **Feeling ending:** `vraiment content au final`, `pas decu du tout`
-- **Warning ending (negative):** `a eviter`, `fuyez`, `ne faites pas la meme erreur`
-- **Abrupt ending:** `pas serieux du tout`, `bref la cata`
-- **No-ending ending:** just stop after the last point, no concluding phrase (very human)
+NEVER end two reviews the same way. NEVER use generic emotional praise as ending (see Rule 10 banned list).
+
+**For POSITIVE reviews (4-5 stars), end with SPECIFIC OUTCOMES. Rotate these types:**
+- **Physical outcome:** `le toit a l'air neuf depuis`, `la gouttière évacue nickel maintenant`, `les tuiles sont bien alignées`
+- **Financial:** `le devis a été respecté au centime près`, `pas de surprise sur la facture`
+- **Peace of mind:** `on va enfin passer l'hiver au sec`, `plus besoin de stresser quand il pleut`
+- **Durability proof:** `ça fait 3 mois et aucun souci`, `on a eu de la grêle depuis et rien n'a bougé`
+- **Simple recommendation:** `je recommande`, `à recommander`, `bonne adresse` (max 1 per batch)
+- **Future intention:** `on les rappellera si besoin`, `je garde le numéro`
+- **No-ending ending:** just stop after the last fact — no concluding phrase (very human)
+
+**For NEGATIVE reviews (1-2 stars), end with:**
+- **Warning:** `à éviter`, `fuyez`, `passez votre chemin`
+- **Consequence:** `du coup j'ai dû rappeler quelqu'un d'autre`, `on a payé deux fois au final`
+- **Abrupt:** `plus jamais`, `pas sérieux du tout`
+- **Unresolved problem:** `et ça fuit toujours`, `le problème est toujours là`
+
+**ABSOLUTE RULE:** Zero duplicate endings in any batch. Every ending must be worded differently.
 
 ### RULE 14: ANTI-FINGERPRINTING (NEW)
 
