@@ -1,0 +1,14 @@
+*.xlsx
+*.csv
+*.env
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+desktop.ini
+*.zip
+*.tar.gz
+*.rar
+node_modules/
+.claude/
+skills-main/
