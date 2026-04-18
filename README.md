@@ -9,7 +9,7 @@ A collection of production-ready custom skills for [Claude Code](https://docs.an
 Skills are markdown-based instruction files that teach Claude Code how to perform specific tasks. Once installed, they:
 
 - **Auto-trigger** based on what you say (e.g., mentioning "reviews" triggers the review writer)
-- **Run via slash command** (e.g., `/french-review`, `/ef-update`)
+- **Run via slash command** (e.g., `/french-review`)
 - **Persist globally** across all projects and sessions
 - **Include reference files** with vocabulary, templates, and strategy guides
 
@@ -20,7 +20,6 @@ Skills are markdown-based instruction files that teach Claude Code how to perfor
 | Skill | Command | Version | Description |
 |-------|---------|---------|-------------|
 | [french-review](./french-review/) | `/french-review` | v3.0 | Write authentic French Google reviews — 30+ industries, Google algorithm bypass, anti-AI-detection |
-| [ef-update](./ef-update/) | `/ef-update` | v1.0 | Automate EF Master spreadsheet updates after completing a review batch |
 | [google-workspace](./google-workspace/) | auto-trigger | v1.0 | Full Google Drive / Sheets / Docs / Slides control — read, write, create, export, share |
 
 ---
@@ -38,19 +37,19 @@ git clone https://github.com/mdnishath/skills.git
 **Windows (CMD):**
 ```cmd
 xcopy /E /I skills\french-review %USERPROFILE%\.claude\skills\french-review
-xcopy /E /I skills\ef-update %USERPROFILE%\.claude\skills\ef-update
+xcopy /E /I skills\google-workspace %USERPROFILE%\.claude\skills\google-workspace
 ```
 
 **Windows (PowerShell):**
 ```powershell
 Copy-Item -Recurse -Force .\skills\french-review\ "$env:USERPROFILE\.claude\skills\french-review"
-Copy-Item -Recurse -Force .\skills\ef-update\ "$env:USERPROFILE\.claude\skills\ef-update"
+Copy-Item -Recurse -Force .\skills\google-workspace\ "$env:USERPROFILE\.claude\skills\google-workspace"
 ```
 
 **macOS / Linux:**
 ```bash
 cp -r skills/french-review ~/.claude/skills/french-review
-cp -r skills/ef-update ~/.claude/skills/ef-update
+cp -r skills/google-workspace ~/.claude/skills/google-workspace
 ```
 
 ### 3. Restart Claude Code
@@ -106,30 +105,6 @@ See [french-review/README.md](./french-review/README.md) for full documentation.
 
 ---
 
-### ef-update v1.0
-
-**EF Master Spreadsheet Auto-Updater**
-
-Automates the post-batch workflow for the EF review tracking system.
-
-#### What It Does
-
-1. Reads completed batch `.xlsx` file
-2. Updates **Task sheet** — appends entries with numbering and formatting
-3. Updates **Todays Work sheet** — marks done, removes completed, renumbers
-4. Updates **Dashboard** — increments review counts
-5. Resets batch file — clears output columns, keeps input data
-
-#### Usage
-
-```
-/ef-update path/to/batch-file.xlsx
-```
-
-See [ef-update/README.md](./ef-update/README.md) for full documentation.
-
----
-
 ## Folder Structure
 
 ```
@@ -144,11 +119,18 @@ skills/
 │       ├── business-vocabulary.md         # 30+ industry vocabulary sets
 │       ├── example-reviews.md             # 35+ examples with realistic accents
 │       └── opening-templates.md           # 90+ opening templates by rating
-├── ef-update/                             # EF Master Updater v1.0
+├── google-workspace/                      # Google Drive/Sheets/Docs/Slides v1.0
 │   ├── README.md
 │   ├── SKILL.md
+│   ├── references/
+│   │   ├── setup-guide.md
+│   │   └── usage-examples.md
 │   └── scripts/
-│       └── ef_update.py
+│       ├── gdrive_api.py
+│       ├── gsheet_api.py
+│       ├── gdoc_api.py
+│       ├── gslide_api.py
+│       └── setup.py
 └── [future-skill]/                        # Add new skills here
     ├── README.md
     └── SKILL.md
@@ -198,7 +180,7 @@ user_invocable: true
 ### Language
 
 - **Input:** English (your prompts)
-- **Output:** Depends on the skill (french-review outputs French, ef-update outputs English)
+- **Output:** Depends on the skill (french-review outputs French, others in English)
 
 ### Customization
 
@@ -214,7 +196,7 @@ See individual skill READMEs for customization details.
 ## Requirements
 
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) (CLI tool by Anthropic)
-- For `ef-update`: Python 3.8+ with `openpyxl` package
+- For `google-workspace`: Python 3.9+ with `google-auth`, `google-auth-oauthlib`, `google-api-python-client` (the setup wizard installs these for you)
 
 ---
 
