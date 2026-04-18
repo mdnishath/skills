@@ -21,6 +21,7 @@ Skills are markdown-based instruction files that teach Claude Code how to perfor
 |-------|---------|---------|-------------|
 | [french-review](./french-review/) | `/french-review` | v3.0 | Write authentic French Google reviews — 30+ industries, Google algorithm bypass, anti-AI-detection |
 | [ef-update](./ef-update/) | `/ef-update` | v1.0 | Automate EF Master spreadsheet updates after completing a review batch |
+| [google-workspace](./google-workspace/) | auto-trigger | v1.0 | Full Google Drive / Sheets / Docs / Slides control — read, write, create, export, share |
 
 ---
 
