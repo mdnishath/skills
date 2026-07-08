@@ -64,36 +64,13 @@ Before writing ANY review, first generate an invisible persona for each review. 
 
 ## PHASE 1: MASTER WRITING ENGINE — 16 RULES
 
-### RULE 1: ACCENT HANDLING (REALISTIC PHONE TYPING)
+### RULE 1: STRICT ACCENT HANDLING (CORRECT FRENCH)
 
-**CRITICAL UPDATE:** Google's algorithm flags reviews where accents are CONSISTENTLY missing across multiple reviews. Real French phone users have autocorrect that ADDS accents automatically. Systematic accent dropping is a bot signature.
+**CRITICAL UPDATE:** Google's algorithm respects properly written French. While real users sometimes drop accents, you must ALWAYS use correct French accents (é, è, à, ô, ù) to ensure the text reads professionally yet naturally.
 
-**Strategy: Simulate real phone autocorrect behavior**
-- Most modern phones (iPhone, Samsung) auto-add accents in French keyboard mode
-- Real users typing fast sometimes miss accents, but autocorrect catches MOST of them
-- The pattern should be: MOSTLY correct accents with OCCASIONAL misses
-
-**Accent retention rates (vary per review):**
-- Review type A (phone with autocorrect): Keep 85-95% of accents (most correct)
-- Review type B (lazy typer): Keep 60-75% of accents (some missing)
-- Review type C (desktop/careful): Keep 95-100% of accents (nearly perfect)
-- Review type D (old phone/no autocorrect): Keep 40-55% of accents (many missing)
-
-**Distribution in a batch of 5:** 2x Type A, 1x Type B, 1x Type C, 1x Type D
-**Distribution in a batch of 10:** 4x Type A, 2x Type B, 2x Type C, 2x Type D
-
-| Common accented words | Correct form (use most of the time) | Dropped form (use occasionally) |
-|---------|----------|----------|
-| été | été | ete |
-| très | très | tres |
-| après | après | apres |
-| problème | problème | probleme |
-| gêré | géré | gere |
-| honnêtement | honnêtement | honnetement |
-| deçu | déçu | decu |
-| équipe | équipe | equipe |
-
-**KEY RULE:** In any batch, at least 40% of reviews should have NEARLY CORRECT accents (85%+ retention). Never make ALL reviews have the same accent pattern.
+**Strategy: Perfect Accents**
+- Always use correct accents (ex: système, a été, très, problème).
+- Never intentionally drop accents. Ensure words like "été", "très", "après", "problème", "déçu", "équipe" are always correctly accented.
 
 ### RULE 2: APOSTROPHE HANDLING (REALISTIC VARIATION)
 
@@ -125,7 +102,7 @@ Before writing ANY review, first generate an invisible persona for each review. 
 
 **KEY RULE:** In any batch, at least 40% of reviews should have CORRECT apostrophes throughout. NEVER have ALL reviews drop apostrophes the same way.
 
-### RULE 3: STRICT PUNCTUATION
+### RULE 3: STRICT PUNCTUATION ET CASING
 
 - **NEVER** exclamation marks (!)
 - **NEVER** dashes or hyphens (-) between words
@@ -134,6 +111,7 @@ Before writing ANY review, first generate an invisible persona for each review. 
 - **NEVER** ellipsis (...)
 - **ONLY** commas (,) and periods (.)
 - Use `et` to join phrases
+- **CASING (Majuscules):** Never use random capital letters in the middle of a sentence. Only capitalize the first letter of a sentence or proper nouns. (ex: "L'intervention s'est faite rapidement. En plus, le passage des câbles..." -> NOT "En plus, Le passage...").
 
 ### RULE 4: WORD COUNT (varied per review)
 
@@ -189,17 +167,16 @@ Always prefer:
 - `tel` over `telephone` (rarely)
 - `aprem` over `apres midi` (very rarely, young persona only)
 
-### RULE 9: GRAMMAR IMPERFECTIONS (natural errors)
+### RULE 9: STRICT GRAMMAR AGREEMENTS (Natural but Correct)
 
-1-2 per review maximum. Pick from:
-- Missing agreement: `les tuile` instead of `les tuiles`
-- Dropped `ne`: `ca fuit pas` instead of `ca ne fuit pas`
-- `ya pas eu` instead of `il n'y a pas eu`
-- `on a ete` instead of `nous avons ete`
-- Run-on comma splice
-- Missing word: `le couvreur arrive le matin` (dropped `est`)
-- Double space (very rare)
-- Random lowercase at sentence start (some reviews only)
+While the tone must be casual and informal, the grammar must be structurally correct natively:
+1. **Adjective Agreement (Masculin/Féminin):** Always match adjectives to their nouns correctly.
+   - *Féminin:* "la pose" -> "discrète" (NOT discret), "la production" -> "bonne" (NOT bon), "la surface" -> "idéale" (NOT idéal).
+   - *Masculin:* "le rendement" -> "bon" (NOT bonne).
+2. **Subject-Verb Agreement with Collectives:** Singular collective nouns must take singular verbs.
+   - "L'équipe d'installation a fait du bon boulot" (NOT "ont fait").
+   - "Le personnel est sympa" (NOT "sont sympas").
+3. **No random mistakes:** Remove the previous rule about adding intentional typos. Native speakers sound natural through vocabulary and phrasing, not through basic grammar errors.
 
 ### RULE 10: BANNED PHRASES — EXPANDED LIST
 
